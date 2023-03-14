@@ -18,7 +18,7 @@ Said so, nothing precludes you to write a more general predicate (that `bounded_
 
 And if you want to go very sophisticated and meta-programming you can use that parameter to pass what kind of operation you should use!. Check this "hint":
 
-![meta-op](meta-operators.png)
+![meta-op](imgs/meta-operators.png)
 
 :-)
 
