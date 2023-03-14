@@ -170,10 +170,7 @@ RMIT’s Student Conduct policy requires that students abide by the academic int
 
 If you see something like this:
 
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image1.png "image_tooltip")
-
+![alt_text](imgs/permission-google.png "no permission")
 
 then chances are you are not correctly logged into your RMIT account or you are logged with your private Google account and your browser cannot distinguish. Either open it an incognito browser window or make sure you are logged into your RMIT account. There is nothing I can do from my side if you don’t access the form with the right authentication credentials.
 
