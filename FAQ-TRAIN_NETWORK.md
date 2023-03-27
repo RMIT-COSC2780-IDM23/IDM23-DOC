@@ -1,9 +1,24 @@
 # Train Network Assignment FAQ
 
 - [Train Network Assignment FAQ](#train-network-assignment-faq)
+    - [Is the empty list a path?](#is-the-empty-list-a-path)
     - [For `fastest_route/6`, can we assume there is only 1 fastest route?](#for-fastest_route6-can-we-assume-there-is-only-1-fastest-route)
     - [Can we take that `bounded_route/7` holds if `Duration` is _less-or-equal_ than `Limit`?](#can-we-take-that-bounded_route7-holds-if-duration-is-less-or-equal-than-limit)
     - [How can I compute \& carry "so-far" results?](#how-can-i-compute--carry-so-far-results)
+
+### Is the empty list a path?
+
+Since we are interested in paths with an origin and destination, we will assume that a path has at least one city. That is why we had this example for `route/6`:
+
+```prolog
+?- route(montreal, montreal, freight, Path, Length, Duration).
+Path = [montreal]
+Length = 0
+Duration = 0
+```
+
+So, the empty list is not a path in our setting.
+
 ### For `fastest_route/6`, can we assume there is only 1 fastest route?
 
 Yes and no. There could indeed be more than one fastest route because they are equally fast. An implementation that yields all fastest routes is of course better than those that return just one.
