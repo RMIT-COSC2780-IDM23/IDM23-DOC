@@ -1,10 +1,23 @@
 # Train Network Assignment FAQ
 
 - [Train Network Assignment FAQ](#train-network-assignment-faq)
+    - [Can I use built-in predicate `P/n`?](#can-i-use-built-in-predicate-pn)
     - [Is the empty list a path?](#is-the-empty-list-a-path)
     - [For `fastest_route/6`, can we assume there is only 1 fastest route?](#for-fastest_route6-can-we-assume-there-is-only-1-fastest-route)
     - [Can we take that `bounded_route/7` holds if `Duration` is _less-or-equal_ than `Limit`?](#can-we-take-that-bounded_route7-holds-if-duration-is-less-or-equal-than-limit)
     - [How can I compute \& carry "so-far" results?](#how-can-i-compute--carry-so-far-results)
+
+### Can I use built-in predicate `P/n`?
+
+This assignment can be solved neatly using plain basic Prolog built-in predicates. As the Language Restriction section in the specs states you are not to use advanced predicates or libraries. These include all-solution predicates like `findall/3` for example or the constraint libraries, none are needed anyways.
+
+If in doubt always ask in the forum. Some other predicates that you shall not use are:
+
+- `table/1`, `order_by/1`.
+
+Some predicates that you can use as they are still basic are:
+
+- `nth0/3`, `nth1/3`, `list_to_set/2`
 
 ### Is the empty list a path?
 
